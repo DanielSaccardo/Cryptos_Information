@@ -3,7 +3,7 @@
 ###########
 
 import webscraping as ws
-import costants
+import constants
 
 
 #############
