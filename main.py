@@ -76,10 +76,10 @@ if __name__ == "__main__":
     print("\n\n")
 
     # Scraping infos
-    cryptos_temp = ws.extract_json(costants.API)['coins']
+    cryptos_temp = ws.extract_json(constants.API)['coins']
 
     # Remove useless informations
-    cryptos = dict_list_clean(cryptos_temp, costants.REMOVE_PARAMS)
+    cryptos = dict_list_clean(cryptos_temp, constants.REMOVE_PARAMS)
 
     print_str = []
     maxlen = 0
@@ -93,7 +93,7 @@ if __name__ == "__main__":
 
     # Ordinated string printing
     for i in range(len(print_str)):
-        if i % costants.COLUMNS < costants.COLUMNS-1:
+        if i % constants.COLUMNS < constants.COLUMNS-1:
             print(print_str[i], end="")
 
             # Add some spaces to align columns
